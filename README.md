@@ -15,9 +15,9 @@ Our real dataset is available on the [project page](http://medicalaugmentedreali
 ## Table of Content
 
 - [Setup](#setup)
-- [Recording Data](##recording-data)
-- [Camera Setup and Calibration](##camera-setup-and-calibration)
-- [Ground Truth Recovery](##ground-truth-recovery)
+- [Recording Data](#recording-data)
+- [Camera Setup and Calibration](#camera-setup-and-calibration)
+- [Ground Truth Recovery](#ground-truth-recovery)
 - [Citations](#citations)
 
 ## Setup
