@@ -3,28 +3,28 @@
 - [Project page](http://medicalaugmentedreality.org/handobject.html)
 - [Synthetic Grasp Generation](https://github.com/jonashein/grasp_generator)
 - [Synthetic Grasp Rendering](https://github.com/jonashein/grasp_renderer)
-- [Real Dataset Recording](https://github.com/jonashein/handobject_dataset_recorder)
+- [Real Dataset Generation](https://github.com/jonashein/handobject_dataset_creator)
 - [HandObjectNet Baseline](https://github.com/jonashein/handobjectnet_baseline)
 - [PVNet Baseline](https://github.com/jonashein/pvnet_baseline)
 - [Combined Model Baseline](https://github.com/jonashein/baseline_combination)
 
 Our real dataset is available on the [project page](http://medicalaugmentedreality.org/handobject.html).
 
-COMING SOON
-
 <!-- - [Paper](http://arxiv.org/abs/2004.13449) -->
 
 ## Table of Content
 
 - [Setup](#setup)
-- [Demo](#demo)
+- [Recording Data](##recording-data]
+- [Camera Setup and Calibration](##camera-setup-and-calibration]
+- [Ground Truth Recovery](##ground-truth-recovery]
 - [Citations](#citations)
 
 ## Setup
 
 Retrieve the code
 ```sh
-git clone https://github.com/jonashein/handobject_dataset_recorder
+git clone https://github.com/jonashein/handobject_dataset_recorder.git
 cd handobject_dataset_recorder
 ```
 
@@ -81,7 +81,7 @@ ln -s build/handobject_registration .
 ln -s build/scene_viewer .
 ```
 
-## Recording data
+## Recording Data
 
 Use the `k4arecorder` included in the Azure Kinect SDK to capture hardware-synchronized RGB-D recordings.
 Exemplary commands can be found [here](https://docs.microsoft.com/en-us/azure/kinect-dk/record-external-synchronized-units).
@@ -106,7 +106,6 @@ ffmpeg -i sub_recording.mkv -map 0:0 -vsync 0 sub_color/frame_%04d.png
 and select about 10-20 image pairs for calibration. Load these image pairs into the Stereo Camera Calibrator App and run the calibration.
 Export the 4x4 transformation matrix containing the extrinsic parameters of the secondary camera's color sensor. 
 The matrix should be stored in a simple text file similar to the [exemplary calibration file](assets/secondary_camera_color_extrinsics.npy).
-
 
 ## Ground Truth Recovery
 
