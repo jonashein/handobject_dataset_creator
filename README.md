@@ -162,12 +162,7 @@ If you find this code useful for your research, please consider citing:
 
 * the publication that this code was adapted for
 ```
-@inproceedings{hein21_towards,
-  title     = {Towards Markerless Surgical Tool and Hand Pose Estimation},
-  author    = {Hein, Jonas and Seibold, Matthias and Bogo, Federica and Farshad, Mazda and Pollefeys, Marc and Fürnstahl, Philipp and Navab, Nassir},
-  booktitle = {IPCAI},
-  year      = {2021}
-}
+COMING SOON.
 ```
 
 * the publication it builds upon and that this code was originally developed for
