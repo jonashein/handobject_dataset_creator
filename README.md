@@ -162,7 +162,16 @@ If you find this code useful for your research, please consider citing:
 
 * the publication that this code was adapted for
 ```
-COMING SOON.
+@article{hein2021towards,
+  title={Towards markerless surgical tool and hand pose estimation},
+  author={Hein, Jonas and Seibold, Matthias and Bogo, Federica and Farshad, Mazda and Pollefeys, Marc and F{\"u}rnstahl, Philipp and Navab, Nassir},
+  journal={International Journal of Computer Assisted Radiology and Surgery},
+  volume={16},
+  number={5},
+  pages={799--808},
+  year={2021},
+  publisher={Springer}
+}
 ```
 
 * the publication it builds upon and that this code was originally developed for
